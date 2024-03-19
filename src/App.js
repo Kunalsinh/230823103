@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Suggestion from "./Suggestions";
-const allData = require("./data.json");
+const allData = require("./suggestionsData.json");
 
 function App() {
   console.log(allData);
@@ -10,7 +10,6 @@ function App() {
       {
       allData.map(function (suggest) {
         return <Suggestion suggestionPic={suggest.suggestPic} suggestionName={suggest.suggestName} />
-        
       })
       }
     </>

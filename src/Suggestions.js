@@ -12,7 +12,6 @@ function Suggestion(props) {
                     <p style={{fontSize:"20px",paddingTop:"9px",fontWeight:"normal",marginLeft:"80px"}}>
                         {props.suggestionName}
                     </p>
-                
             </div>
         </>
     );

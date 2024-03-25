@@ -7,11 +7,17 @@ function App() {
   console.log(allData);
   return (
     <>
-      {
+    {/*
+    {
       allData.map(function (suggest) {
         return <Suggestion suggestionPic={suggest.suggestPic} suggestionName={suggest.suggestName} />
       })
-      }
+    }
+    */} 
+    
+    {
+      
+    }
     </>
   );
 }

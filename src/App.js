@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Resume from './Resumes.js';
 import Suggestion from "./Suggestions";
 import Resume from "./Resumes.js";
 import Hook from "./Hooks.js";
@@ -16,8 +17,12 @@ function App() {
     }  */}
     
     {
+<<<<<<< HEAD
       // <Resume/>
       <Hook />
+=======
+      <Resume/>
+>>>>>>> d72ee8dc510955f5d9acd2d1e4ab6747a6e0aad3
     }
     </>
   );

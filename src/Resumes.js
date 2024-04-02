@@ -1,20 +1,42 @@
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
 function Resume() {
+
+  const [name,setName] = useState("Mr. Neel Bhatti");
+  const [designation,setDesignation] = useState("Developer");
+  
+  function handlingForm(e){
+    console.log(e.target.name)
+    if(e.target.name === "name"){
+      setName(e.target.value)
+    }
+  
+    if(e.target.name === "designation"){
+      setDesignation(e.target.value)
+    }
+  }
+  
   return (
     <>
+     <div>
+      <input name="name" onChange={(e)=>{handlingForm(e)}} />
+      <input name="designation" onChange={(e)=>{handlingForm(e)}} />
+    </div>
     <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}}>
     <div className="resume" style={{background:"#1f1e2e", marginTop:'20px',marginLeft:'20px',padding:'5px',width:'20%'}}>
 
     {/* Image */}
-    <img src="assets/bio-image.jpg" alt='' style={{height:'300px', width:'250px', margin:'10%',borderRadius:'10px'}}/>
+    <img src="assets/bio-image.jpg" alt='' style={{height:'300px', width:'250px', margin:'10%',borderRadius:'10px',marginLeft:"10px"}}/>
       
 
     {/* Name div */}
       <div style={{color:'white', margin:'10%', fontSize:'14px'}}>
       <header>
-        <h1 style={{marginTop:'-50px',marginBottom:'35px'}}>Darshan Maraviya</h1>
+        <h1 style={{marginTop:'-30px',marginBottom:'35px'}}>{name}</h1>
+        <h1 style={{marginTop:'-30px',marginBottom:'35px'}}>{designation}</h1>
       </header>
 
     {/* Contact */}
@@ -148,6 +170,8 @@ function Resume() {
     
     </div>
     </div>
+
+   
     </>
   );
 }

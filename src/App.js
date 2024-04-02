@@ -19,7 +19,7 @@ function App() {
     {
       // <Resume/>
       <Hook />
-      <Resume/>
+      
 
     }
     </>

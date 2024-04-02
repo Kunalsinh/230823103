@@ -17,12 +17,10 @@ function App() {
     }  */}
     
     {
-<<<<<<< HEAD
       // <Resume/>
       <Hook />
-=======
       <Resume/>
->>>>>>> d72ee8dc510955f5d9acd2d1e4ab6747a6e0aad3
+
     }
     </>
   );

@@ -15,7 +15,7 @@ function Hook() {
 
   return (
     <>
-      <div>
+      <div className="container">
         <h3>Form</h3>
         <form onSubmit={handleHook}>
           <label>Name</label>

@@ -1,7 +1,7 @@
 function Form() {
     return (
         <>
-            <form className="mt-5" style={{}}>
+            {/* <form className="mt-5" style={{}}>
                 <div className="container border border-2 border-dark mt-2">
                     <h3 className="bg-light text-dark mt-2 text-center">Forms</h3>
 
@@ -33,7 +33,12 @@ function Form() {
                         </div>
                     </div>
                 </div>
-            </form>
+            </form> */}
+            <div className="container mt-2.5">
+                <p>
+                    hello user!
+                </p>
+            </div>
         </>
     );
 }

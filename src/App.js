@@ -24,10 +24,11 @@ function App() {
         })
         } */
 
-        // <Resume/>
-        // <Hook />
-        // <Form />
+
       }
+      {/* <Resume />
+      <Hook />
+      <Form /> */}
     </>
   );
 }
